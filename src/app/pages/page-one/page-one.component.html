@@ -1,0 +1,9 @@
+<div class="boxCust">
+  <p>Component 1 - Employee List</p>
+
+  <div *ngIf="(employee$ | async).length == 0">No data</div>
+
+  <div *ngFor="let employee of employee$ | async; let i = index">
+    <span>{{ i + 1 }}.</span> {{ employee.name }} | {{ employee.age }}
+  </div>
+</div>
