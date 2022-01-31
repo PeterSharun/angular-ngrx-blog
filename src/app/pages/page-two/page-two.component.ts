@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { addEmployee } from 'src/app/ngrx_store/employee/action/employee.actions';
-import { EmployeeDet } from 'src/app/ngrx_store/employee/model/employee-det';
+import { addEmployee } from '../../../app/ngrx_store/employee/action/employee.actions';
+import { EmployeeDet } from '../../../app/ngrx_store/employee/model/employee-det';
 
 @Component({
   selector: 'app-page-two',
@@ -20,3 +20,4 @@ export class PageTwoComponent implements OnInit {
     this.store.dispatch(addEmployee(employee));
   }
 }
+

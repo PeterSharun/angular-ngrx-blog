@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { resetEmployee } from 'src/app/ngrx_store/employee/action/employee.actions';
+import { resetEmployee } from '../../../app/ngrx_store/employee/action/employee.actions';
 @Component({
   selector: 'app-page-four',
   templateUrl: './page-four.component.html',
@@ -15,3 +15,4 @@ export class PageFourComponent implements OnInit {
     this.store.dispatch(resetEmployee());
   }
 }
+

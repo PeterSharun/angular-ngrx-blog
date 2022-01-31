@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { deleteEmployee } from 'src/app/ngrx_store/employee/action/employee.actions';
-import { EmployeeDet } from 'src/app/ngrx_store/employee/model/employee-det';
+import { deleteEmployee } from '../../../app/ngrx_store/employee/action/employee.actions';
+import { EmployeeDet } from '../../../app/ngrx_store/employee/model/employee-det';
 
 @Component({
   selector: 'app-page-three',
